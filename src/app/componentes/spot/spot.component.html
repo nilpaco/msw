@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="flex flex-auto justify-between">
+        <div class="card text-bold text-upper flex flex-column justify-content-end"
+            *ngIf="loading">
+            <div class='text-input__loading'>
+                <div class='text-input__loading--line'></div>
+                <div class='text-input__loading--line'></div>
+                <div class='text-input__loading--line'></div>
+            </div>
+        </div>
+        <div class="card text-bold text-upper flex flex-column justify-content-end"
+            *ngFor="let spot of spots">
+            <div>Barceloneta</div>
+            <div class="flex flex-row justify-between">
+                <div class="sb-heading--small">0.6-0.7m</div>
+                <div class="wave flex flex-row">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
