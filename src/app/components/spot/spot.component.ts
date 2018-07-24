@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { SpotService } from '../../services/spot.service';
+import { forkJoin } from 'rxjs';
 
 @Component({
 	selector: 'app-spot',
@@ -13,14 +14,13 @@ export class SpotComponent implements OnInit {
 	constructor(private spotService: SpotService) {}
 
 	ngOnInit() {
-		// setTimeout(() => {
-		// 	this.spots = [ 1, 2, 3 ];
-
-		// 	this.loading = false;
-		// }, 2000);
-		this.spotService.getUsers().subscribe((res) => {
+		const spotsIds: number[] = JSON.parse(localStorage.getItem('spots'));
+		const calls = spotsIds.map((id) => {
+			return this.spotService.getSpot(id);
+		});
+		forkJoin(calls).subscribe((res) => {
+			console.log(res);
 			this.loading = false;
-			this.spots = res;
 		});
 	}
 }

@@ -193,6 +193,12 @@ ul {
     justify-content: end !important;
 }
 
+.align-items-center {
+    -webkit-align-items: center !important;
+    -ms-align-items: center !important;
+    align-items: center !important;
+}
+
 // Loading
 @mixin nth-children($points...) {
     @each $point in $points {
@@ -244,4 +250,15 @@ ul {
     padding-top: 74px;
     padding-bottom: 20px;
     overflow-x: scroll;
+}
+
+i.icon {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    &.add {
+        background-image: url('./assets/icons/round-add-24px.svg')
+    }
 }

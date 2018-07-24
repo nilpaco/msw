@@ -6,11 +6,12 @@ import { Observable } from 'rxjs';
 	providedIn: 'root'
 })
 export class SpotService {
-	private static url = 'https://api.github.com/users';
+	private static url = 'http://magicseaweed.com/api/3cbe4a12ee732e013131978bc7538089/forecast/?spot_id=4397';
+	private bcnetaId = 3535;
 
 	constructor(private http: HttpClient) {}
 
-	getUsers(): Observable<any> {
+	getSpot(spotId): Observable<any> {
 		return this.http.get(SpotService.url);
 	}
 }
