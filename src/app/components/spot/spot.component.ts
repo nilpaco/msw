@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { SpotService } from '../../services/spot.service';
 import { forkJoin } from 'rxjs';
+import { Spot } from '../../pages/spots-list/spot.model';
 
 @Component({
 	selector: 'app-spot',
@@ -8,18 +9,20 @@ import { forkJoin } from 'rxjs';
 	styleUrls: [ './spot.component.scss' ]
 })
 export class SpotComponent implements OnInit {
-	public spots: any[] = [];
+	public spots: Spot[];
 	public loading = true;
 
 	constructor(private spotService: SpotService) {}
 
 	ngOnInit() {
-		const spotsIds: number[] = JSON.parse(localStorage.getItem('spots'));
-		const calls = spotsIds.map((id) => {
-			return this.spotService.getSpot(id);
+		const selectedSpots: Spot[] = JSON.parse(localStorage.getItem('spots') || '');
+		console.log(selectedSpots);
+		const calls = selectedSpots.map((selectedSpot) => {
+			return this.spotService.getSpot(selectedSpot.id);
 		});
+		this.loading = calls.length ? true : false;
 		forkJoin(calls).subscribe((res) => {
-			console.log(res);
+			this.spots = res;
 			this.loading = false;
 		});
 	}

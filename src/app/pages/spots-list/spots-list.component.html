@@ -1,13 +1,11 @@
-<section>
-    <ul>
-        <li>Barceloneta
-            <input type="checkbox"
-                (click)="addSpot(3535)">
-        </li>
-        <li>Berria
-            <input type="checkbox"
-                (click)="addSpot(4397)">
-        </li>
-    </ul>
-    <button (click)="addSpots()">Done</button>
+<section class="container">
+	<h1 class="sb-heading--large">Spots</h1>
+	 <ul>
+		<li class="flex justify-between sb-heading--small" *ngFor="let spot of spots" (click)="addSpot(spot)">
+			{{spot.name}}
+			 <input type="checkbox" [checked]="spot._selected">
+		</li>
+  </ul>
+  <button (click)="addSpots()">Done</button>
+
 </section>

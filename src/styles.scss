@@ -1,264 +1,268 @@
 /* You can add global styles to this file, and also import other style files */
 
 body {
-    height: 100%;
-    background-color: #fff;
-    color: rgba(0, 0, 0, .87);
-    font-family: Gotham, Helvetica Neue, Helvetica, Arial, sans-serif;
-    font-weight: 400;
-    font-size: 1.3rem;
-    line-height: 1.5;
-    letter-spacing: -.01em;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
+	height: 100%;
+	background-color: #fff;
+	color: rgba(0, 0, 0, .87);
+	font-family: Gotham, Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-weight: 400;
+	font-size: 1.3rem;
+	line-height: 1.5;
+	letter-spacing: -.01em;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
 }
 
 html {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    height: 100%;
-    font-size: 62.5%;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	height: 100%;
+	font-size: 62.5%;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 .card {
-    height: 80px;
-    padding: 20px;
-    border: 1px solid #f4f4f4;
-    border-radius: 15px;
-    box-shadow: 2px 2px 40px -12px #999;
-    cursor: pointer;
-    position: relative;
-    min-width: 240px;
+	height: 80px;
+	padding: 20px;
+	border: 1px solid #f4f4f4;
+	border-radius: 15px;
+	box-shadow: 2px 2px 40px -12px #999;
+	cursor: pointer;
+	position: relative;
+	min-width: 240px;
 }
 
 .flex-auto {
-    -webkit-box-flex: 1 !important;
-    -ms-flex: 1 1 auto !important;
-    flex: 1 1 auto !important;
-    min-width: 0 !important;
-    min-height: 0 !important;
+	-webkit-box-flex: 1 !important;
+	-ms-flex: 1 1 auto !important;
+	flex: 1 1 auto !important;
+	min-width: 0 !important;
+	min-height: 0 !important;
 }
 
 .justify-between {
-    -webkit-box-pack: justify !important;
-    -ms-flex-pack: justify !important;
-    justify-content: space-between !important;
+	-webkit-box-pack: justify !important;
+	-ms-flex-pack: justify !important;
+	justify-content: space-between !important;
 }
 
 .items-stretch {
-    -webkit-box-align: stretch !important;
-    -ms-flex-align: stretch !important;
-    align-items: stretch !important;
+	-webkit-box-align: stretch !important;
+	-ms-flex-align: stretch !important;
+	align-items: stretch !important;
 }
 
 .flex {
-    display: -webkit-box !important;
-    display: -ms-flexbox !important;
-    display: flex !important;
+	display: -webkit-box !important;
+	display: -ms-flexbox !important;
+	display: flex !important;
 }
 
 .pl3 {
-    padding-left: 1.6rem !important;
+	padding-left: 1.6rem !important;
 }
 
 .text-noUnderline {
-    text-decoration: none !important;
+	text-decoration: none !important;
 }
 
 .text-upper {
-    text-transform: uppercase !important;
-    letter-spacing: .1em !important;
+	text-transform: uppercase !important;
+	letter-spacing: .1em !important;
 }
 
 .text-bold {
-    font-weight: 700 !important;
+	font-weight: 700 !important;
 }
 
 .text-xxs {
-    font-size: 1.2rem !important;
+	font-size: 1.2rem !important;
 }
 
 .py2 {
-    padding-top: .8rem !important;
-    padding-bottom: .8rem !important;
+	padding-top: .8rem !important;
+	padding-bottom: .8rem !important;
 }
 
 .m1 {
-    margin: .4rem !important;
+	margin: .4rem !important;
 }
 
 .inline-block {
-    display: inline-block !important;
+	display: inline-block !important;
 }
 
 ul {
-    margin: 0;
-    padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 .pl2 {
-    padding-left: .8rem !important;
+	padding-left: .8rem !important;
 }
 
 *,
 :after,
 :before {
-    -webkit-box-sizing: inherit;
-    box-sizing: inherit;
+	-webkit-box-sizing: inherit;
+	box-sizing: inherit;
 }
 
 .relative {
-    position: relative !important;
+	position: relative !important;
 }
 
 .pb4 {
-    padding-bottom: 2.4rem !important;
+	padding-bottom: 2.4rem !important;
 }
 
 .pt1 {
-    padding-top: .4rem !important;
+	padding-top: .4rem !important;
 }
 
 .bg-blackWarm {
-    background-color: #2d2926 !important;
+	background-color: #2d2926 !important;
 }
 
 .relative {
-    position: relative !important;
+	position: relative !important;
 }
 
 .pb4 {
-    padding-bottom: 2.4rem !important;
+	padding-bottom: 2.4rem !important;
 }
 
 .pt1 {
-    padding-top: .4rem !important;
+	padding-top: .4rem !important;
 }
 
 .bg-blackWarm {
-    background-color: #2d2926 !important;
+	background-color: #2d2926 !important;
 }
 
 .color-textWhite {
-    color: #fff !important;
+	color: #fff !important;
 }
 
 .pt3 {
-    padding-top: 1.6rem !important;
+	padding-top: 1.6rem !important;
 }
 
 .pb2 {
-    padding-bottom: .8rem !important;
+	padding-bottom: .8rem !important;
 }
 
 .container,
 .container--headerCrate {
-    display: block;
-    width: 100%;
-    margin: 0;
-    padding: 0 1.6rem;
+	display: block;
+	width: 100%;
+	margin: 0;
+	padding: 0 1.6rem;
 }
 
 .justify-between {
-    -webkit-box-pack: justify !important;
-    -ms-flex-pack: justify !important;
-    justify-content: space-between !important;
+	-webkit-box-pack: justify !important;
+	-ms-flex-pack: justify !important;
+	justify-content: space-between !important;
 }
 
 .items-baseline {
-    -webkit-box-align: baseline !important;
-    -ms-flex-align: baseline !important;
-    align-items: baseline !important;
+	-webkit-box-align: baseline !important;
+	-ms-flex-align: baseline !important;
+	align-items: baseline !important;
 }
 
 .sb-heading--xxsmall {
-    font-size: 1.2rem;
-    line-height: 1.229;
+	font-size: 1.2rem;
+	line-height: 1.229;
 }
 
 .sb-heading--small {
-    font-size: 1.7rem;
+	font-size: 1.7rem;
 }
 
 .flex-column {
-    -webkit-flex-direction: column !important;
-    -ms-flex-direction: column !important;
-    flex-direction: column !important;
+	-webkit-flex-direction: column !important;
+	-ms-flex-direction: column !important;
+	flex-direction: column !important;
 }
 
 .justify-content-end {
-    -webkit-justify-content: end !important;
-    -ms-justify-content: end !important;
-    justify-content: end !important;
+	-webkit-justify-content: end !important;
+	-ms-justify-content: end !important;
+	justify-content: end !important;
 }
 
 .align-items-center {
-    -webkit-align-items: center !important;
-    -ms-align-items: center !important;
-    align-items: center !important;
+	-webkit-align-items: center !important;
+	-ms-align-items: center !important;
+	align-items: center !important;
 }
 
 // Loading
 @mixin nth-children($points...) {
-    @each $point in $points {
-        &:nth-child(#{$point}) {
-            @content;
-        }
-    }
+	@each $point in $points {
+		&:nth-child(#{$point}) {
+			@content;
+		}
+	}
 }
 
 .text-input__loading {
-    width: 100%;
-    &--line {
-        height: 10px;
-        margin-top: 5px;
-        animation: pulse 1s infinite ease-in-out;
-    }
-    div {
-        @include nth-children(1) {
-            margin-top: 0;
-        }
-        @include nth-children(1, 5, 9) {
-            width: calc(100% - 25%); // 150px
-        }
-        @include nth-children(2, 6, 10) {
-            width: calc(100% - 5%); // 250px
-        }
-        @include nth-children(3, 7) {
-            width: calc(100% - 45%); // 50px
-        }
-        @include nth-children(4, 8) {
-            width: 100px;
-        }
-    }
+	width: 100%;
+	&--line {
+		height: 10px;
+		margin-top: 5px;
+		animation: pulse 1s infinite ease-in-out;
+	}
+	div {
+		@include nth-children(1) {
+			margin-top: 0;
+		}
+		@include nth-children(1, 5, 9) {
+			width: calc(100% - 25%); // 150px
+		}
+		@include nth-children(2, 6, 10) {
+			width: calc(100% - 5%); // 250px
+		}
+		@include nth-children(3, 7) {
+			width: calc(100% - 45%); // 50px
+		}
+		@include nth-children(4, 8) {
+			width: 100px;
+		}
+	}
 }
 
 @keyframes pulse {
-    0% {
-        background-color: rgba(165, 165, 165, 0.1)
-    }
-    50% {
-        background-color: rgba(165, 165, 165, 0.3)
-    }
-    100% {
-        background-color: rgba(165, 165, 165, 0.1)
-    }
+	0% {
+		background-color: rgba(165, 165, 165, 0.1);
+	}
+	50% {
+		background-color: rgba(165, 165, 165, 0.3);
+	}
+	100% {
+		background-color: rgba(165, 165, 165, 0.1);
+	}
 }
 
 .container {
-    padding-top: 74px;
-    padding-bottom: 20px;
-    overflow-x: scroll;
+	padding-top: 74px;
+	padding-bottom: 20px;
+	overflow-x: scroll;
 }
 
 i.icon {
-    display: inline-block;
-    width: 48px;
-    height: 48px;
-    background-repeat: no-repeat;
-    background-size: contain;
-    &.add {
-        background-image: url('./assets/icons/round-add-24px.svg')
-    }
+	display: inline-block;
+	width: 48px;
+	height: 48px;
+	background-repeat: no-repeat;
+	background-size: contain;
+	&.add {
+		background-image: url('./assets/icons/round-add-24px.svg');
+	}
+}
+
+a {
+	text-decoration: none;
 }

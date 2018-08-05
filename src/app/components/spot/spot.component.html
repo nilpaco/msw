@@ -23,12 +23,15 @@
         </div>
         <a [routerLink]="['spots']">
             <div class="card text-bold text-upper flex flex-column justify-content-end"
-                *ngIf="!loading && spots && !spots.length">
+                *ngIf="!loading">
                 <div class="flex align-items-center">
                     <i class="icon add"></i>
-                    <span style="width: 120px">Add your
+                    <span *ngIf="!spots" style="width: 120px">Add your
                     local
-                    spot</span>
+						  spot</span>
+						  <span *ngIf="spots && spots.length" style="width: 120px">Edit your
+							local
+							spot</span>
                 </div>
             </div>
         </a>
